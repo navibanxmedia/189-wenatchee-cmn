@@ -52,5 +52,3 @@ fields:
   type: image_gallery
   config: {}
   label: Photos
-pages:
-- _data/home-info.json

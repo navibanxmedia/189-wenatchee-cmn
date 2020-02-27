@@ -49,3 +49,5 @@ fields:
 - type: image_gallery
   name: photos
   label: Photos
+pages:
+- _data/home-info.json
