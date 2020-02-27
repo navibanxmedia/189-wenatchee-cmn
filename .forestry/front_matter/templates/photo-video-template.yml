@@ -1,0 +1,31 @@
+---
+label: Photo & Video Template
+hide_body: true
+fields:
+- type: textarea
+  name: img-path
+  label: Image Path (Without file number)
+  hidden: false
+- type: number
+  name: img-count
+  label: Total Image Count
+  hidden: false
+- type: file
+  name: feat-image-num
+  label: Featured Image
+- type: number
+  name: video-ready
+  label: Videos Uploaded on Vimeo?
+  description: Binary true or false (1 or 0)
+  hidden: false
+- type: text
+  name: unbranded-video-link
+  label: Unbranded Video Link
+  hidden: false
+- type: text
+  name: branded-video-link
+  label: Branded Video Link
+  hidden: false
+- type: text
+  name: header-title
+  label: Header Title

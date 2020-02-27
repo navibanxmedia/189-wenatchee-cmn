@@ -1,0 +1,49 @@
+---
+label: Updated Agent Template
+hide_body: true
+fields:
+- type: text
+  name: name
+  label: name
+- type: text
+  name: email
+  label: email
+- type: text
+  name: website-url
+  label: website-url
+- type: text
+  name: website-title
+  label: website-title
+- type: text
+  name: company
+  label: company
+- type: text
+  name: license-number
+  label: license-number
+- type: text
+  name: phone-number
+  label: phone-number
+- type: file
+  name: photo
+  label: photo
+- type: text
+  name: img-path
+  label: img-path
+- type: text
+  name: img-count
+  label: img-count
+- type: text
+  name: feat-image-num
+  label: feat-image-num
+- type: text
+  name: video-ready
+  label: video-ready
+- type: text
+  name: unbranded-video-link
+  label: unbranded-video-link
+- type: text
+  name: branded-video-link
+  label: branded-video-link
+- type: text
+  name: header-title
+  label: header-title

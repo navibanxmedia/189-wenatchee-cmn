@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+
+    
+    <title>{{site.data.home-info.street-address}}, {{site.data.home-info.city}} {{site.data.home-info.state}} {{site.data.home-info.postal-code}} - {{site.data.agent.name}}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400|Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="assets/css/mediaelementplayer.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="assets/css/fl-bigmug-line.css">
+
+
+    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="shortcut icon" type="image/png" href="assets/nb.ico"/>
+    <link rel="shortcut icon" type="image/png" href="assets/nb.ico"/>
+    <meta property="og:title" content="{{site.data.home-info.street-address}}, {{site.data.home-info.city}} {{site.data.home-info.state}} {{site.data.home-info.postal-code}} - {{site.data.agent.name}}" />
+    <meta property="og:image" content="{{site.data.home-info.featured-photo}}" />
+
+</head>
+
+<body>
+
+    <div class="site-loader"></div>
+
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+        <!-- .site-mobile-menu -->
+<!--XXXXXXXXXXXXXXXXXX-->
+        <div class="border-bottom bg-white top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-md-6">
+                        <p class="mb-0">
+                            <a href="tel:{{site.data.agent.phone-number}}" class="mr-3"><span class="text-black fl-bigmug-line-phone351"></span> <span class="d-none d-md-inline-block ml-2">{{site.data.agent.phone-number}}</span></a>
+                            <a href="mailto:{{site.data.agent.email}}"><span class="text-black fl-bigmug-line-email64"></span> <span class="d-none d-md-inline-block ml-2">{{site.data.agent.email}}</span></a>
+
+                        </p>
+                    </div>
+                    <div class="col-6 col-md-6 text-right">
+                        
+                     
+         
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--XXXXXXXXXXXXXXXXXX-->
+
+
+        <div class="site-navbar">
+            <div class="container py-1">
+                <div class="row align-items-center">
+
+                    <!--XXXXXXXXXXXXXXXXXX-->
+                    <div class="col-8 col-md-8 col-lg-4">
+                        <h1 class=""><a href="index.html" class="h5 text-uppercase text-black"><strong><span class="text-danger">.</span></strong></a></h1>
+                    </div>
+                    <!--XXXXXXXXXXXXXXXXXX-->
+
+
+
+                    <div class="col-4 col-md-4 col-lg-8">
+                        <nav class="site-navigation text-right text-md-right" role="navigation">
+
+                            <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+                            <ul class="site-menu js-clone-nav d-none d-lg-block">
+                                <li>
+                                    <a href="#details">Details</a>
+                                </li>
+                                <li><a href="#photo">Photos</a></li>
+                                {% if site.data.media.video-ready != 0 %}
+                                <li><a href="#video">Video</a></li>
+                                {% endif %}
+                                <li><a href="#contact">Contact</a></li>
+                               
+                                
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div><!--Site wrap end-->
+
+
+    <div class="site-blocks-cover overlay" style="background-image: url({{site.data.home-info.featured-photo}});" data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-md-10">
+                    <!--XXXXXXXXXXXXXXXXXX-->
+                    <span class="d-inline-block text-white px-3 mb-3 property-offer-type rounded">{{site.data.agent.name}} Presents</span>
+                    <!--XXXXXXXXXXXXXXXXXX-->
+
+
+
+
+                    <h1 class="mb-2">{{site.data.home-info.street-address}}, {{site.data.home-info.city}} {{site.data.home-info.state}} {{site.data.home-info.postal-code}}</h1>
+                    
+                    <p class="mb-5"><strong class="h2 text-orange font-weight-bold">{{site.data.home-info.price}}</strong></p>
+                  
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section site-section-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8" style="margin-top: -150px;">
+                    <div class="mb-5">
+                        <div class="slide-one-item home-slider owl-carousel" id="details">
+                            
+                            {% for imagePath in site.data.home-info.photos %}
+                                    <div><img src="{{imagePath}}" alt="Image" class="img-fluid"></div>
+                            {%endfor%}    
+                           
+                         
+                            
+                        </div>
+                    </div>
+                    <div class="bg-white">
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <strong class="text-orange h1 mb-3">{{site.data.home-info.price | number_with_delimiter}}</strong>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="property-specs-wrap mb-3 mb-lg-0  float-lg-right">
+                                    <li>
+                                        <span class="property-specs">Beds</span>
+                                        <span class="property-specs-number">{{site.data.home-info.room-count}}<sup></sup></span>
+
+                                    </li>
+                                    <li>
+                                        <span class="property-specs">Baths</span>
+                                        <span class="property-specs-number">{{site.data.home-info.bath-count}}</span>
+
+                                    </li>
+                                    <li>
+                                        <span class="property-specs">SQ FT</span>
+                                        <span class="property-specs-number">{{site.data.home-info.sqft}}</span>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
+                                <span class="d-inline-block text-black mb-0 caption-text">Home Type</span>
+                                <strong class="d-block">{{site.data.home-info.type}}</strong>
+                            </div>
+                            <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
+                                <span class="d-inline-block text-black mb-0 caption-text">Year Built</span>
+                                <strong class="d-block">{{site.data.home-info.year-built}}</strong>
+                            </div>
+                            <div class="col-md-6 col-lg-4 text-left border-bottom border-top py-3">
+                                <span class="d-inline-block text-black mb-0 caption-text">Lot Sq Ft</span>
+                                <strong class="d-block">{{site.data.home-info.lot-sqft}}</strong>
+                            </div>
+                        </div>
+                        <h2 class="h4 text-black">Property Description</h2>
+                        <p>{{site.data.home-info.description}}
+</p>
+
+                        <hr>
+                        <!--XXXXXXXXXXXXXXXXXX-->
+                        <h5>Interested? Contact {{site.data.agent.name}} </h5>
+                            <p><a href="tel:{{site.data.agent.number}}">{{site.data.agent.phone-number}}</a></p>
+                            <p><a href="mailto:{{site.data.agent.email}}">{{site.data.agent.email}}</a>
+                            <p><a href="{{site.data.agent.website-url}}">{{site.data.agent.website-title}}</a>
+                        </p>
+                        <!--XXXXXXXXXXXXXXXXXX-->
+                      
+
+                        <!--XXXXXXXX Property Video XXXXXXXXXX-->
+    {% if site.data.media.video-ready !=0 %}
+                        <div class="row mt-5">
+                            <div class="col-12" id="video">
+                                <h2 class="h4 text-black mb-3">Property Video</h2>
+                            </div>
+                            <div class="col-12">
+                            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/{{site.data.media.branded-video-link}}?title=0&byline=0&portrait=0?loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                    </div>
+                        </div>
+                        
+                        {% endif %}
+                        <!--XXXXXXXXXend prop videoXXXXXXXXX-->
+
+                        {% if site.data.media.matterport != 0 %}
+                            <div class="row mt-5">
+                            <div class="col-12" id="3d">
+                                <h2 class="h4 text-black mb-3">3D Virtual Tour</h2>
+                            </div>
+                            <div class="col-12">
+                            <iframe width='100%' height='480' src='https://my.matterport.com/show/?m={{site.data.media.matterport}}' frameborder='0' allowfullscreen allow='vr'></iframe>
+                    </div>
+                        </div>
+                        {% endif %}
+                        <div class="styled">
+                        <div class="row mt-5">
+                            <div class="col-12" id="photo">
+                                <h2 class="h4 text-black mb-3">Property Gallery</h2>
+                            </div>
+                            
+                                {% for imagePath in site.data.home-info.photos %}
+                                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                                        <a href="{{imagePath}}" class="image-popup gal-item"><img src="{{imagePath}}" alt="Image" class="img-fluid"></a>
+                                    </div>
+                                {%endfor%}                          
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 pl-md-5">
+                    <!--XXXXXXXXXXXXXXXXXX-->
+                    <div class="bg-white widget border rounded" id="contact">
+                        <img src="{{site.data.agent.agent-photo}}" width="100%" >
+                        <br><br>
+                        <h4 style="margin-bottom: 10px">{{site.data.agent.name}}</h4>
+                        <img src="{{site.data.agent.company-logo}}" width="60%" >
+                        <h6 class=" mb-3">{{site.data.agent.license-number}}</h6>
+                        <hr>
+                        <p><a href="{{site.data.agent.website-url}}">{{site.data.agent.website-title}}</a></p>
+                        <p><a href="tel:{{site.data.agent.phone-number}}">{{site.data.agent.phone-number}}</a></p>
+                        <p><a href="mailto:{{site.data.agent.email}}">{{site.data.agent.email}}</a></p>
+                    </div>
+                    <!--XXXXXXXXXXXXXXXXXX-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | <a href="https://www.navibanx.media/" target="_blank">Navibanx Media</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/mediaelement-and-player.min.js"></script>
+    <script src="assets/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

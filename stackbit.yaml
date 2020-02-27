@@ -1,0 +1,100 @@
+stackbitVersion: ~0.2.0
+ssgName: jekyll
+ssgVersion: 0.1.12
+buildCommand: ./ssg-build.sh
+publishDir: _site
+staticDir: ''
+uploadDir: images
+dataDir: _data
+pagesDir: ''
+pageLayoutKey: layout
+metadata:
+  title: Navibanx Media Listing
+  description: Property Listing site
+  author: Stackbit
+  authorURL: 'https://www.stackbit.com'
+  images:
+    small: images/demo-256x192.png
+    large: images/demo-1024x768.png
+stackbit_banner:
+  show_banner: true
+  name: Navibanx Media Listing Site
+  create_url: 'https://app.stackbit.com/create?theme=fjord'
+  github_url: 'https://github.com/stackbithq/stackbit-theme-fjord'
+sourceMapping:
+  - source:
+      fieldPath: author.name
+    target:
+      file: data/author.json
+      fieldPath: name
+  - source:
+      fieldPath: author.name
+    target:
+      file: config.yml
+      fieldPath: params.header.title
+  - source:
+      fieldPath: author.email
+    target:
+      file: data/author.json
+      fieldPath: email
+  - source:
+      fieldPath: author.avatar
+    target:
+      file: data/author.json
+      fieldPath: avatar
+  - source:
+      fieldPath: 'social.links[0].url'
+    target:
+      file: data/social.json
+      fieldPath: 'links[0].url'
+models:
+  property_details:
+    type: data
+    label: Property Details
+    file: home-info.json
+    fields:
+      - type: string
+        name: street-address
+        label: Street Address
+      - type: string
+        name: city
+        label: City
+      - type: string
+        name: state
+        label: State
+      - type: string
+        name: postal-code
+        label: Postal Code
+      - type: string
+        name: price
+        label: Price
+      - type: string
+        name: type
+        label: Property Type
+        description: Ex. Single Family Home
+      - type: number
+        name: room-count
+        label: Number of Rooms
+      - type: number
+        name: bath-count
+        label: Number of Bathrooms
+      - type: string
+        name: lot-sqft
+        label: Area (Lot)
+      - type: string
+        name: sqft
+        label: Area (Living Space)
+      - type: number
+        name: year-built
+        label: Year Built
+      - type: markdown
+        name: description
+        label: Property Description
+      - type: image
+        name: featured-photo
+        label: Featured Photo
+      - type: list
+        name: photos
+        label: Photos
+        items:
+          type: image

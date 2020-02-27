@@ -1,0 +1,52 @@
+---
+label: Property Details
+hide_body: true
+is_partial: false
+fields:
+  - type: text
+    name: street-address
+    label: Street Address
+  - type: text
+    name: city
+    label: City
+  - type: text
+    name: state
+    label: State
+  - type: text
+    name: postal-code
+    label: Postal Code
+  - type: text
+    name: price
+    label: Price
+  - type: text
+    name: type
+    label: Property Type
+    description: Ex. Single Family Home
+  - type: number
+    name: room-count
+    label: Number of Rooms
+  - type: number
+    name: bath-count
+    label: Number of Bathrooms
+  - type: text
+    name: lot-sqft
+    label: Area (Lot)
+  - type: text
+    name: sqft
+    label: Area (Living Space)
+  - type: number
+    name: year-built
+    label: Year Built
+  - type: textarea
+    name: description
+    label: Property Description
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: file
+    name: featured-photo
+    label: Featured Photo
+  - type: image_gallery
+    name: photos
+    label: Photos
