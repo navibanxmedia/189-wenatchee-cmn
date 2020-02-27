@@ -10,9 +10,8 @@ sections:
   templates:
   - property_details
 - type: document
-  path: _data/agents.json
+  path: _data/agent.json
   label: Agent Details
-  match: "**/*"
 upload_dir: images
 public_path: "/images"
 front_matter_path: ''
