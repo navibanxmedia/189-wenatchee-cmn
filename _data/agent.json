@@ -1,11 +1,11 @@
 {
-  "name": "",
-  "email": "",
+  "name": "Bobby Nijjar",
+  "email": "NijjarRealty@gmail.com",
   "website-url": "",
   "website-title": "",
   "company": "",
-  "license-number": "",
-  "phone-number": "",
+  "license-number": "DRE 1224959",
+  "phone-number": "510.552.3595",
   "img-path": "",
   "img-count": null,
   "feat-image-num": "",
@@ -13,7 +13,7 @@
   "unbranded-video-link": "",
   "branded-video-link": "",
   "header-title": "",
-  "company-logo": "",
-  "photo": "",
+  "company-logo": "/images/Legacy_H_green_ERA_Color.jpg",
+  "photo": "/images/bj.jpg",
   "agent-photo": ""
 }
